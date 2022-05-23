@@ -10,14 +10,13 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:import/recommended"
   ],
   "rules": {
     "no-console": "warn",
     "prettier/prettier": "error",
-    "import/no-unresolved": [
-      2,
-      { "caseSensitive": false }
-   ]
+    "import/no-unresolved": 2,
+    "no-explicit-any": ["error",{ "ignoreRestArgs": true }]
   }
 }
